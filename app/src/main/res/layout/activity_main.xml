@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    layout_height="match_parent"
-    layout_width="match_parent">
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
 
     <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
@@ -30,7 +31,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="CEP"
+                    android:hint="@string/hint_cep"
                     android:inputType="numberDecimal"
                     android:maxLength="8"
                     android:textColorHint="#009688"
@@ -46,9 +47,9 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="20dp"
                 android:backgroundTint="#009688"
-                android:cornerRadius="5dp"
+                app:cornerRadius="5dp"
                 android:padding="15dp"
-                android:text="Buscar CEP"
+                android:text="@string/btn_buscar_cep"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -67,7 +68,7 @@
                 android:id="@+id/edit_logradouro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Logradouro"
+                android:hint="@string/hint_logradouro"
                 android:inputType="text"
                 android:textColorHint="#009688"
                 android:textCursorDrawable="@drawable/cursor"
@@ -89,7 +90,7 @@
                 android:id="@+id/edit_bairro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Bairro"
+                android:hint="@string/hint_bairro"
                 android:inputType="text"
                 android:textColorHint="#009688"
                 android:textCursorDrawable="@drawable/cursor"
@@ -111,7 +112,7 @@
                 android:id="@+id/edit_cidade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Cidade"
+                android:hint="@string/hint_cidade"
                 android:inputType="text"
                 android:textColorHint="#009688"
                 android:textCursorDrawable="@drawable/cursor"
@@ -134,7 +135,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:hint="Estado"
+                android:hint="@string/hint_estado"
                 android:inputType="text"
                 android:maxLength="2"
                 android:textColorHint="#009688"
